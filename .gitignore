@@ -10,3 +10,4 @@ build
 *.war
 *.ear
 *.bin
+/out
