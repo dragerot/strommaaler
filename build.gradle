@@ -1,10 +1,11 @@
 buildscript {
     ext {
-        //1.4.0 https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-1.4-Release-Notes
-        springBootVersion = '1.4.0.RELEASE'
+        springBootVersion = '1.5.0.RELEASE'
     }
     repositories {
+        jcenter()
         mavenCentral()
+        maven { url "http://repo.spring.io/libs-release" }
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -63,6 +64,10 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-jdbc')
     compile('org.springframework.boot:spring-boot-starter-mobile')
     compile('org.springframework.boot:spring-boot-starter-validation')
+
+    compile 'io.springfox:springfox-swagger2:2.8.0'
+    compile 'io.springfox:springfox-data-rest:2.8.0'
+    compile 'io.springfox:springfox-swagger-ui:2.8.0'
 
 
     //JMX monitorering

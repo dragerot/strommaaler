@@ -20,19 +20,19 @@ public class StrommaalerKontroller {
     @Autowired
     MaalingService maalingService;
 
-    // http://localhost:8022/maalinger/test
+    // http://localhost:8080/maalinger/test
     @RequestMapping(value = "/test", method = RequestMethod.GET, produces = "application/json")
     public Boolean create() {
         return true;
     }
 
-    // http://localhost:8022/maalinger/list
+    // http://localhost:8080/maalinger/list
     @RequestMapping(value = "/list", method = RequestMethod.GET, produces = "application/json")
     public List<Maaling> list(){
         return maalingService.list();
     }
 
-   // http://localhost:8022/maalinger/create/20001/200/1000/2000
+   // http://localhost:8080/maalinger/create/20001/200/1000/2000
    @RequestMapping(value = "/create/{totalmaaling}/{utleiemaaling}/{aar}/{maaned}", method = RequestMethod.GET, produces = "application/json")
     public Maaling create(@PathVariable("totalmaaling") Integer totalmaaling,
                                 @PathVariable("utleiemaaling") Integer utleiemaaling,
