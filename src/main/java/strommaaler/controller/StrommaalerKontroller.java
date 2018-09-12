@@ -2,10 +2,7 @@ package strommaaler.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import strommaaler.model.Maaling;
 import strommaaler.service.MaalingService;
 
@@ -19,6 +16,11 @@ import java.util.List;
 public class StrommaalerKontroller {
     @Autowired
     MaalingService maalingService;
+
+    @GetMapping(value = "/ping")
+    public String ping(){
+        return this.getClass().getCanonicalName();
+    }
 
     // http://localhost:8080/maalinger/test
     @RequestMapping(value = "/test", method = RequestMethod.GET, produces = "application/json")
