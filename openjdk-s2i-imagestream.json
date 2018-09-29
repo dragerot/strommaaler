@@ -9,14 +9,14 @@
     "tags": [
       {
         "name": "1.0",
-        "annotations" : {
-          "description" : "OpenJDK S2I images.",
-          "iconClass" : "icon-jboss",
-          "tags" : "builder,java,xpaas",
-          "supports" : "java:8,xpaas:1.0",
+        "annotations": {
+          "description": "OpenJDK S2I images.",
+          "iconClass": "icon-jboss",
+          "tags": "builder,java,xpaas",
+          "supports":"java:8,xpaas:1.0",
           "sampleRepo": "https://github.com/jboss-openshift/openshift-quickstarts",
           "sampleContextDir": "undertow-servlet",
-         "version": "1.0"
+          "version": "1.0"
         }
       }
     ]
