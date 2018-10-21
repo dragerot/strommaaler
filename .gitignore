@@ -6,7 +6,7 @@ build
 *.class
 
 # Package Files #
-!gradle/wrapper/*
+
 *.jar
 *.war
 *.ear
