@@ -1,4 +1,8 @@
 
+docker build --build-arg JAR_FILE=./build/libs/StrommmaalerJar-1.0.0.jar .
+docker run -d e4b8a479e31a
+docker exec -it 526efb58876a ps
+
 ## Innledning
 Dette er en spring boot applikasjon, rest tjeneste
 
