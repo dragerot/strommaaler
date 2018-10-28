@@ -4,22 +4,16 @@ pipeline {
         stage('Build') {
             steps {
               	sh 'ls -al'
-              	sh 'chmod 755 mvnw'
-                sh './mvnw clean'
-                sh './mvnw compile'
-            }
-        }
-        stage('test') {
-            steps {
-               	sh './mvnw test'
+              	sh 'chmod 755 gradlew'
+                sh './gradlew clean compileJava test'
            }
         }
-         stage('install') {
-                    steps {
-                       	sh './mvnw install'
-                      	sh 'ls -al'
-                    }
-                }
+        stage('build docker image') {
+            steps {
+               	sh './gradlew test'
+              	sh 'ls -al'
+            }
+        }
     }
 //   post {
 //          always {
