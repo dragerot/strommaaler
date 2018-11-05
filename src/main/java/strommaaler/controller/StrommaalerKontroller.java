@@ -12,7 +12,7 @@ import java.util.List;
 
 //// http://localhost:8022/create/1/1/2016/8
 @RestController
-@RequestMapping("maalinger")
+@RequestMapping("/maalinger")
 public class StrommaalerKontroller {
     @Autowired
     MaalingService maalingService;

@@ -1,6 +1,7 @@
 package strommaaler.model;
 
 
+import lombok.Data;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.data.annotation.CreatedDate;
 
@@ -11,6 +12,7 @@ import java.time.LocalDate;
 
 
 @Entity
+@Data
 public class Maaling implements Serializable {
 
     @Id
