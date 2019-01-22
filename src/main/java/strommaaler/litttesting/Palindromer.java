@@ -1,4 +1,4 @@
-package strommaaler.bullshit;
+package strommaaler.litttesting;
 
 public class Palindromer {
 

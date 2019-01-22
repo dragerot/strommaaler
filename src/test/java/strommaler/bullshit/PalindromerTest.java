@@ -2,7 +2,7 @@ package strommaler.bullshit;
 
 
 import org.junit.Test;
-import strommaaler.bullshit.Palindromer;
+import strommaaler.litttesting.Palindromer;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
 
