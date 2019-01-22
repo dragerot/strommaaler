@@ -20,3 +20,6 @@ target/
 
 target/
 !.mvn/wrapper/maven-wrapper.jar
+
+package-lock.json
+/node_modules/
