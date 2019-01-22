@@ -1,4 +1,11 @@
 
+https://projects.spring.io/spring-security-oauth/docs/oauth2.html
+https://developer.okta.com/blog/2018/04/02/client-creds-with-spring-boot
+
+
+https://developer.okta.com/blog/2017/11/20/add-sso-spring-boot-15-min
+https://developer.okta.com/docs/api/resources/oidc#id-token
+
 docker build --build-arg JAR_FILE=./build/libs/StrommmaalerJar-1.0.0.jar .
 docker run -d e4b8a479e31a
 docker exec -it 526efb58876a ps

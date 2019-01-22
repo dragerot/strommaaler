@@ -1,8 +1,5 @@
 .idea
 *.iml
-.gradle
-build
-!.gradle/wrapper/gradle-wrapper.jar
 target/
 !.mvn/wrapper/maven-wrapper.jar
 
